@@ -32,7 +32,7 @@ const Home = () => {
                     </>
                 )}
                 {data.Predictions === "negative" ? (
-                        <div>The comments seems to be negative</div>
+                        <div>The comment seems to be negative</div>
                 ) : (
                     <>
                     </>
