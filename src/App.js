@@ -1,25 +1,14 @@
 import './App.css';
+import './styles.scss';
+import Header from './Components/Header/Header';
+import Home from './Components/Home/Home';
 
 function App() {
 
-  async function getPredictions(){
-    fetch('http://localhost:8000/predict/?input_review="I love you"').then(res=>res.json())
-    .then((data)=>{
-      console.log(data);
-    })
-}
-
-
-
   return (
     <div className="App">
-      <header className="App-header">
-        Huuuu
-      </header>
-
-      <button className="button" onClick={()=>{
-        getPredictions();
-      }}>button</button>
+      <Header />
+      <Home />
     </div>
   );
 }
